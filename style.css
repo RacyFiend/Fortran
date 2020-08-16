@@ -1,4 +1,5 @@
 body{
+	height: 2150px;
 	color: black;
 	padding: 0;
 	margin: 0;
@@ -14,19 +15,31 @@ header{
 	justify-content: space-around;
 	align-items: center;
 	min-width: 100%;
-	height: 300px;
+	height: 14%;
 	background-color: rgba(229, 18, 39, 0.9);
 }
 .main-header .logo{
+
 	flex-shrink: 0.5;
-	background: url('img/logo.png');
+
 	background-size: 500px;
 	background-position: -40px 0px;
 	background-repeat: no-repeat;
 }
+.main-header .logo img {
+  margin-left: -20px;
+  margin-top: 0px;
+  width: 90%;
+}
+
+.main-header p{
+	color: white
+}
 .main-header div{
+	
 	min-height: 80%;
 	min-width: 30%;
+	max-width: 33%;
 
 }
 .navigation{
@@ -36,16 +49,18 @@ header{
 	justify-content: space-around;
 }
 .navigation div{
+	text-align: center;
 	min-height: 40%;
 	flex-wrap: wrap;
 	min-width: 50%;
 	max-height: 60%;
 
+
 }
 .navigation div:nth-child(1){
 	font-weight: 700;
 	
-	font-size: 30px;
+	font-size: 32px;
 
 	
 }
@@ -58,7 +73,12 @@ header{
 }	
 
 
+
+
+
 main{
+	height: 79%;
+	width: 100%;
 	background: rgba(255, 215, 153, 0.8) url("img/woman.png");
 	background-size: 1200px;
 	background-position: -250px 35px;
@@ -71,7 +91,7 @@ main .action{
 	justify-content: space-between;
 	min-width: 45%;
 	max-width: 50%;
-	height: 710px;
+	height: 41.8%;
 }
 
 main .action > div{
@@ -182,17 +202,14 @@ textarea{
 	margin-left: 140px;
 	transition-duration: 0.6s;
 }
-fieldset div{
-	padding-top: 15px;
-	margin-top: 15px;
-}
+
 form{
 	color: white;
 	font-size: 20px;
 }
 main .reasons{
 	min-width: 100%;
-	height: 500px;
+	height: 29.1%;
 	background: rgba(165, 174, 134, 0.8);
 }
 
@@ -206,7 +223,7 @@ main .reasons{
 
 main .map{
 	min-width: 100%;
-	height: 710px;
+	height: 29.2%;
 	background: rgba(54, 71, 78, 0.8);
 }
 
@@ -217,11 +234,12 @@ footer{
 	justify-content: space-between;
 	align-items: center;
 	min-width: 100%;
-	height: 150px;
+	height: 7%;
 	background-color: rgba(59, 56, 59, 1);
 }
 
 footer div{
+	
 	min-width: 30%;
 	min-height: 80%;
 	box-sizing: border-box;
@@ -236,8 +254,8 @@ footer .social{
 	margin-right: 20px;
 }
 .social .wrapper{
-	margin-left: 150px;
-	margin-top: 40px
+	margin-left: 10%;
+	margin-top: 7%;
 }
 .social a img{
 filter: sepia(0.4);
@@ -246,20 +264,16 @@ filter: sepia(0.4);
 filter: sepia(0);
 }
 
-footer .logo{
-	flex-shrink: 0.5;
-	background: url('img/logo.png');
-	background-size: 500px;
-	background-position: -40px -74px;
-	background-repeat: no-repeat;
+footer .logo img{
+margin-top: 2%;
+min-width: 60%;
+width: 60%;
+height: auto;
 }
-footer .bonk{
-	flex-grow: 2;
-	flex-shrink: 0.5;
-	background: url('img/bonk.png');
-	background-size: 95px;
-	background-position: 340px 0px;
-	background-repeat: no-repeat;
+footer .bonk img{
+	margin-left: 20%;
+width: 20%;
+height: auto;
 }
 p{
 	color: black;
