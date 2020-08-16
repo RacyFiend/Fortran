@@ -1,0 +1,266 @@
+body{
+	color: black;
+	padding: 0;
+	margin: 0;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+a{
+	color: white;
+	text-decoration: none;
+}
+
+header{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-width: 100%;
+	height: 300px;
+	background-color: rgba(229, 18, 39, 0.9);
+}
+.main-header .logo{
+	flex-shrink: 0.5;
+	background: url('img/logo.png');
+	background-size: 500px;
+	background-position: -40px 0px;
+	background-repeat: no-repeat;
+}
+.main-header div{
+	min-height: 80%;
+	min-width: 30%;
+
+}
+.navigation{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+.navigation div{
+	min-height: 40%;
+	flex-wrap: wrap;
+	min-width: 50%;
+	max-height: 60%;
+
+}
+.navigation div:nth-child(1){
+	font-weight: 700;
+	
+	font-size: 30px;
+
+	
+}
+.navigation div:nth-child(2){
+	font-weight: 600;
+	font-style: italic;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 25px;
+	color: rgb(47, 46, 46, 0.8);
+}	
+
+
+main{
+	background: rgba(255, 215, 153, 0.8) url("img/woman.png");
+	background-size: 1200px;
+	background-position: -250px 35px;
+	background-repeat: no-repeat;
+	
+}
+main .action{
+	margin-left: 700px;
+	display: flex;
+	justify-content: space-between;
+	min-width: 45%;
+	max-width: 50%;
+	height: 710px;
+}
+
+main .action > div{
+	min-width: 45%;
+	max-width: 50%;
+	background: red;	
+}
+
+.action .timer{
+	background: rgba(255, 215, 153, 1);
+	border-radius: 10px;
+	align-self: center;
+	text-align: center;
+		padding-top: 100px;
+		margin-left: 30px;
+}
+.action .timer .wrapper{
+	padding-top: -50px;
+	display: block;
+}
+.action .timer .wrapper h1{
+	color: white;
+	text-transform: uppercase;
+	font-size: 26px;
+	
+}
+#timer{
+	text-transform: none;
+}
+.action .timer .wrapper p{
+	color: white;
+	text-transform: uppercase;
+	font-size: 30px;
+}
+
+.action .timer .wrapper p span{
+	width: 100px;
+	font-size: 40px;
+	text-decoration: underline;
+	color: lightblue;
+}
+.action .timer .wrapper .last-price{
+	text-decoration: line-through;
+	color: purple;
+}
+
+.action .form{
+	height: 200px;
+	min-width: 45%;
+	max-width: 50%;
+	background: rgba(255, 215, 153, 1);
+	border-radius: 10px;
+	padding: 100px 0px;
+	align-self: center;
+	display: block;
+	margin-left: 150px;
+}
+.main .form {
+
+	padding: 10px 20px;
+	display: block;
+}
+fieldset{
+	border-radius: 10px;
+	border: 5px solid white;
+}
+input{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 16px;
+	margin-left: 8px;
+	margin-top: 15px;
+	height: 20px;
+	color: purple;
+	background: white;
+	border-radius: 3px;
+	border: 0px;
+	transition-duration: 0.6s;
+}
+input[type="submit"]{
+	height: 30px;
+	margin-left: 30px;
+	transition-duration: 0.6s;
+}
+input[type="submit"]:hover{
+	transform: scale(1.1);
+}
+input[type="email"]:hover{
+	transform: scale(1.1);
+}
+input[type="text"]:hover{
+	transform: scale(1.1);
+}
+textarea:hover{
+	transform: scale(1.1);
+}
+input[type="reset"]{
+	height: 30px;
+	transition-duration: 0.6s;
+}
+input[type="reset"]:hover{
+	transform: scale(1.1);
+}
+input[type="tel"]:hover{
+	transform: scale(1.1);
+}
+textarea{
+	margin-top: -20px;
+	margin-left: 140px;
+	transition-duration: 0.6s;
+}
+fieldset div{
+	padding-top: 15px;
+	margin-top: 15px;
+}
+form{
+	color: white;
+	font-size: 20px;
+}
+main .reasons{
+	min-width: 100%;
+	height: 500px;
+	background: rgba(165, 174, 134, 0.8);
+}
+
+
+
+
+
+
+
+
+
+main .map{
+	min-width: 100%;
+	height: 710px;
+	background: rgba(54, 71, 78, 0.8);
+}
+
+
+
+footer{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	min-width: 100%;
+	height: 150px;
+	background-color: rgba(59, 56, 59, 1);
+}
+
+footer div{
+	min-width: 30%;
+	min-height: 80%;
+	box-sizing: border-box;
+}
+footer .social{
+	padding-left: 60px;
+	align-self: flex-start;
+	display: inline-block;
+}
+ .social a{	
+	display: inline-block;
+	margin-right: 20px;
+}
+.social .wrapper{
+	margin-left: 150px;
+	margin-top: 40px
+}
+.social a img{
+filter: sepia(0.4);
+}
+.social a:hover img{
+filter: sepia(0);
+}
+
+footer .logo{
+	flex-shrink: 0.5;
+	background: url('img/logo.png');
+	background-size: 500px;
+	background-position: -40px -74px;
+	background-repeat: no-repeat;
+}
+footer .bonk{
+	flex-grow: 2;
+	flex-shrink: 0.5;
+	background: url('img/bonk.png');
+	background-size: 95px;
+	background-position: 340px 0px;
+	background-repeat: no-repeat;
+}
+p{
+	color: black;
+}
