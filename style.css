@@ -1,5 +1,4 @@
 body{
-	height: 2150px;
 	color: black;
 	padding: 0;
 	margin: 0;
@@ -15,21 +14,14 @@ header{
 	justify-content: space-around;
 	align-items: center;
 	min-width: 100%;
-	height: 14%;
+	height: 300px;
 	background-color: rgba(229, 18, 39, 0.9);
 }
-.main-header .logo{
 
-	flex-shrink: 0.5;
-
-	background-size: 500px;
-	background-position: -40px 0px;
-	background-repeat: no-repeat;
-}
 .main-header .logo img {
-  margin-left: -20px;
-  margin-top: 0px;
-  width: 90%;
+ margin-left: 10%;
+	margin-top: 10%;
+	width: 60%;
 }
 
 .main-header p{
@@ -73,12 +65,7 @@ header{
 }	
 
 
-
-
-
 main{
-	height: 79%;
-	width: 100%;
 	background: rgba(255, 215, 153, 0.8) url("img/woman.png");
 	background-size: 1200px;
 	background-position: -250px 35px;
@@ -86,12 +73,12 @@ main{
 	
 }
 main .action{
-	margin-left: 700px;
+	margin-left: 40%;
 	display: flex;
 	justify-content: space-between;
 	min-width: 45%;
 	max-width: 50%;
-	height: 41.8%;
+	height: 710px;
 }
 
 main .action > div{
@@ -209,7 +196,7 @@ form{
 }
 main .reasons{
 	min-width: 100%;
-	height: 29.1%;
+	height: 500px;
 	background: rgba(165, 174, 134, 0.8);
 }
 
@@ -223,7 +210,7 @@ main .reasons{
 
 main .map{
 	min-width: 100%;
-	height: 29.2%;
+	height: 500px;
 	background: rgba(54, 71, 78, 0.8);
 }
 
@@ -234,12 +221,11 @@ footer{
 	justify-content: space-between;
 	align-items: center;
 	min-width: 100%;
-	height: 7%;
+	height: 150px;
 	background-color: rgba(59, 56, 59, 1);
 }
 
 footer div{
-	
 	min-width: 30%;
 	min-height: 80%;
 	box-sizing: border-box;
@@ -254,8 +240,8 @@ footer .social{
 	margin-right: 20px;
 }
 .social .wrapper{
-	margin-left: 10%;
-	margin-top: 7%;
+	margin-left: 150px;
+	margin-top: 40px
 }
 .social a img{
 filter: sepia(0.4);
@@ -265,15 +251,13 @@ filter: sepia(0);
 }
 
 footer .logo img{
-margin-top: 2%;
-min-width: 60%;
-width: 60%;
-height: auto;
+	margin-left: 10%;
+	margin-top: 2%;
+	width: 50%;
 }
 footer .bonk img{
-	margin-left: 20%;
-width: 20%;
-height: auto;
+	width: 18%;
+	margin-left:  26%;
 }
 p{
 	color: black;
