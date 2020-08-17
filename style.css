@@ -169,7 +169,7 @@ main .action > div{
 	animation-duration: 0.6s;
 	animation-direction: alternate;
 }
-@keyframes g{
+@keyframes go{
 	from{
 		color: lightblue;
 		font-size: 40px;
@@ -417,7 +417,7 @@ main .map{
 	flex-wrap: wrap;
 	justify-content: space-around;
 }
-.wrapper p{
+.map div:nth-child(2) .wrapper p{
 	margin:0;
 }
 .map div:nth-child(2) .wrapper div{
