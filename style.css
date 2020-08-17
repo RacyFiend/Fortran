@@ -376,10 +376,9 @@ main .reasons{
 	border-radius: 2em;
 	vertical-align: bottom;
 }
-
 .reasons .icons div div p{
 	color: white;
-	font-size: 16px;
+	font-size: 14px;
 	box-sizing: border-box;
 	padding-top: 45%;
 	margin-bottom: 0%;
@@ -410,13 +409,16 @@ main .map{
 }
 .map > div:nth-child(2){
 	flex-grow: 2;
+
 }
 .map div:nth-child(2) .wrapper{
-	margin: 0% 10%;
-	flex-shrink: 0.5;
+	margin: 0% 0%;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-around;
+}
+.wrapper p{
+	margin:0;
 }
 .map div:nth-child(2) .wrapper div{
 	color: rgba(176, 176, 176, 1);
