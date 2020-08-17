@@ -35,9 +35,6 @@ header{
     width: 60%;
     height: auto;
 }
-
-
-
 .main-header div{
 	min-height: 100%;
 	min-width: 30%;
@@ -101,6 +98,17 @@ transform: scale(1.1);
 	justify-content: space-between;
 	list-style: none;
 }
+
+
+
+
+
+
+
+
+
+
+
 main .action{
 	background: rgb(255, 215, 153, 0.5);
 	display: flex;
@@ -161,7 +169,7 @@ main .action > div{
 	animation-duration: 0.6s;
 	animation-direction: alternate;
 }
-@keyframes go{
+@keyframes g{
 	from{
 		color: lightblue;
 		font-size: 40px;
@@ -234,6 +242,15 @@ textarea{
 	border-radius: 6px;
 	transition-duration: 0.6s;
 }
+
+
+
+
+
+
+
+
+
 
 
 
@@ -369,15 +386,63 @@ main .reasons{
 	margin: 0;
 }
 
+
+
+
+
+
+
+
 main .map{
 	min-width: 100%;
 	height: 500px;
 	background: rgba(54, 71, 78, 0.8);
 }
-
-
-
+.map{
+	display: flex;
+	justify-content: space-between;
+}
+.map div{
+	box-sizing: border-box;
+	padding: 2% 2%;
+	height: 100%;
+	min-width: 40%; 
+}
+.map > div:nth-child(2){
+	flex-grow: 2;
+}
+.map div:nth-child(2) .wrapper{
+	margin: 0% 10%;
+	flex-shrink: 0.5;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.map div:nth-child(2) .wrapper div{
+	color: rgba(176, 176, 176, 1);
+	min-width: 35%;
+	max-width: 40%;
+	background: rgba(54, 71, 78, 1);
+	max-height: 40%;
+	border-radius: 10px;
+	transition-duration: 0.8s;
+	transition-property: transform;
+}
+.map div:nth-child(2) .wrapper div p{
+	color: white;
+}
+.map div:nth-child(2) .wrapper div:hover{
+	transform:scale(1.2);
+}
 	
+
+
+
+
+
+
+
+
 
 
 footer{
@@ -388,16 +453,12 @@ footer{
 	height: 150px;
 	background-color: rgba(59, 56, 59, 1);
 }
-
 footer div{
 	min-width: 30%;
 	min-height: 100%;
-
 }
-
 .social {
 	position: relative;
-
 }
 .social .wrapper{
 	position: absolute;
@@ -407,16 +468,13 @@ footer div{
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-
 }
-
-
-.social a:hover img{
-filter: sepia(0);
+.social .wrapper a{
+	filter: sepia(0.4);
 }
-
-
-
+.social .wrapper a:hover{
+	filter: sepia(0);
+}
 footer .logo .relative{
 	position: relative;
 	min-width: 100%;
