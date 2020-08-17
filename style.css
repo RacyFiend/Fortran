@@ -28,7 +28,6 @@ header{
 	color: white
 }
 .main-header div{
-	
 	min-height: 80%;
 	min-width: 30%;
 	max-width: 33%;
@@ -47,14 +46,10 @@ header{
 	min-width: 50%;
 	max-height: 60%;
 
-
 }
 .navigation div:nth-child(1){
 	font-weight: 700;
-	
-	font-size: 32px;
-
-	
+	font-size: 32px;	
 }
 .navigation div:nth-child(2){
 	font-weight: 600;
@@ -63,23 +58,32 @@ header{
 	font-size: 25px;
 	color: rgb(47, 46, 46, 0.8);
 }	
-
-	
-.action .woman img{
-	margin-top: 23.5%;
-    width: 100%;
-}
 main .action{
+	background: rgb(255, 215, 153, 0.0);
 	display: flex;
 	justify-content: space-around;
 	height: 710px;
 }
 
 main .action > div{
-	min-width: 25%;
+	min-width: 26%;
 	max-width: 30%;	
 }
-
+.action .woman{
+	flex-shrink: 0.5;
+}
+.action .woman .relative{
+	position: relative;
+	min-width: 100%;
+	min-height: 100%;
+}
+.action .woman .relative img{
+	position: absolute;
+	left: 0%;
+	bottom: 0%;
+    width: 100%;
+    height: auto;
+}
 
 .action .timer{
 	background: rgba(255, 215, 153, 1);
@@ -87,12 +91,10 @@ main .action > div{
 	align-self: center;
 	text-align: center;
 	height: 68.3%;
-	
-
 }
 .action .timer .wrapper{
-
-	display: block;
+margin: 10% 10%;
+margin-top: 20%
 }
 .action .timer .wrapper h1{
 	color: white;
@@ -121,23 +123,24 @@ main .action > div{
 }
 
 .action .form{
-	height: 40%;
+	flex-shrink: 0.5;
+	box-sizing: border-box;
+	height: 68.3%;
 	background: rgba(255, 215, 153, 1);
 	border-radius: 10px;
-	padding: 100px 0px;
+	padding-top: 3%;
 	align-self: center;
-	display: block;
-	
+	display: block;	
+	color: white;
+	font-size: 125%;
 }
-
 fieldset{
 	border-radius: 10px;
 	border: 5px solid white;
 }
 input{
 	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 16px;
-	margin-left: 8px;
+	font-size: 80%;
 	margin-top: 7%;
 	height: 20px;
 	color: purple;
@@ -173,15 +176,17 @@ input[type="tel"]:hover{
 	transform: scale(1.1);
 }
 textarea{
-	margin-top: -20px;
-	margin-left: 140px;
+	color: purple;
+	border: none;
+	border-radius: 6px;
 	transition-duration: 0.6s;
 }
 
-form{
-	color: white;
-	font-size: 20px;
-}
+
+
+
+
+
 main .reasons{
 	min-width: 100%;
 	height: 500px;
@@ -207,45 +212,70 @@ main .map{
 footer{
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: stretch;
 	min-width: 100%;
 	height: 150px;
 	background-color: rgba(59, 56, 59, 1);
 }
 
 footer div{
+
 	min-width: 30%;
-	min-height: 80%;
-	box-sizing: border-box;
+	min-height: 100%;
+
 }
-footer .social{
-	padding-left: 60px;
-	align-self: flex-start;
-	display: inline-block;
-}
- .social a{	
-	display: inline-block;
-	margin-right: 20px;
+
+.social {
+	position: relative;
+
 }
 .social .wrapper{
-	margin-left: 150px;
-	margin-top: 40px
+	position: absolute;
+	width: 70%;
+	height: auto;
+	left: 10%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
 }
-.social a img{
-filter: sepia(0.4);
-}
+
+
 .social a:hover img{
 filter: sepia(0);
 }
 
-footer .logo img{
-	margin-left: 10%;
-	margin-top: 2%;
-	width: 50%;
+
+
+footer .logo .relative{
+	position: relative;
+	min-width: 100%;
+	min-height: 100%;
 }
+
+footer .logo .relative img{
+	position: absolute;
+	left: 20%;
+	bottom: 35%;
+    width: 60%;
+    height: auto;
+}
+
+
+
+
+footer .bonk .relative{
+	position: relative;
+	min-width: 100%;
+	min-height: 100%;
+}
+
 footer .bonk img{
-	width: 18%;
-	margin-left:  26%;
+	position: absolute;
+	left: 35%;
+	bottom: 30%;
+    width: 30%;
+    height: auto;
 }
 p{
 	color: black;
